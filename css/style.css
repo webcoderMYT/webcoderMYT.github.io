@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica,"PingFang SC","Microsoft Yahei",sans-serif;
+    font-size: 14px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}.section{
+    background: url(../static/page-bg.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+}
+#nav{
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(170, 58, 58);
+    position: fixed;
+    z-index: 1000;
+    left: 80px;
+}
+#nav > .head{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    transform: translate(80px,60px);
+}
+#nav>.head>img{
+    width: 140px;
+    height: 180px;
+}
+#nav>.head-name{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    transform: translateY(240px);
+}
+#nav>.head-name>p:first-child{
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+}
+#nav>.head-name>p:last-child{
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+    color: #fff;
+    letter-spacing: 3px;
+}
+#menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+}
+#menu >a{
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    transition-duration: 0.5s;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+#menu >a:first-child{
+    border-top: 2px solid #fff;
+}
+#menu >a:last-child{
+    border-bottom: 2px solid #fff;
+}
+#menu >a:hover{
+    color: rgb(170, 58, 58);
+    background-color: #fff;
+    text-decoration: none;
+}
+#menu .active{
+    color: rgb(170, 58, 58);
+    background-color: #fff;
+    text-decoration: none;
+}
+.container{
+    width: 960px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 100px;
+}
+.container>.head{
+    width: 100%;
+    position: absolute;
+    margin: 50px auto;
+}
+.container>.head>p:first-child{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 20px;
+}
+.container>.head>hr{
+    border: 3px solid crimson;
+    width: 100px;
+    position: absolute;
+    left: 420px;
+}
+.container>.head>p:last-child{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+}
+.row{
+    position: absolute;
+    transform: translateY(200px);
+}
+.col-md-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.service-item {
+    margin-bottom: 10px;
+    padding: 50px;
+    transition: all 0.5s;
+    color: #fff;
+    font-size: 18px;
+}
+
+.service-item h4 {
+    transition: all 0.5s;
+    font-size: 24px;
+}
+
+.service-item p {
+    transition: all 0.5s;
+}
+
+.service-item:hover {
+    background-color: rgba(250, 250, 250, 1);
+}
+
+.service-item:hover h4 {
+    color: #1e1e1e;
+}
+
+.service-item:hover p {
+    color: #4a4a4a;
+}
+
+.service-item .service-icon {
+    width: 70px;
+    height: 10px;
+    display: inline-block;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+i.fas{
+    font-size: 24px;
+    color: crimson;
+}
+.filter-btns{
+    position: absolute;
+    top: 120px;
+    left: 330px;
+}
+.filter-btn{
+    margin: 0 7px;
+    background-color: #fff;
+    border: 0;
+    color: blue;
+    padding: 8px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.filter-btn:focus,.filter-btn:active{
+    outline: none;
+}
+.filter-btn.active,.filter-btn:hover{
+    background-color: orchid;
+    color: white;
+}
+.cases{
+    position: absolute;
+    margin-top:180px;
+    left: 28px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.case-item{
+    width: 450px;
+    height: 230px;
+    margin-left: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.case-item img{
+    /* height: 100%; */
+    width: 450px;
+    height: 230px;
+    object-fit: cover;
+}
+figcaption{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+    top: 15px;
+    left: 24px;
+    text-align: center;
+    z-index: 9999;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 1s ease-out;
+}
+figcaption i{
+    margin-top: 40px;
+
+}
+figcaption:hover{
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: center;
+}
+.contact{
+    position: absolute;
+    width: 100%;
+    top: 220px;
+    left: 100px;
+}
+.contact-item{
+    width: 600px;
+    height: 100px;
+}
+.contact-item i{
+    font-size: 26px;
+    color: orchid;
+}
+.contact-item p{
+    font-size: 26px;
+    color: orchid;
+    display: inline;
+}
